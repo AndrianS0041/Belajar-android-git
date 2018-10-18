@@ -1,57 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.amikom.splasscreen.MainActivity">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/hello"
-            android:text=""
-            android:gravity="center"
-            android:textSize="24sp"/>
-    </RelativeLayout>
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:id="@+id/layout1"
-        android:gravity="center">
-
-        <Button
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/etName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/adduser"
-            android:text="@string/adduser"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/userlist"
-            android:text="@string/userlist"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonAct"
-            android:layout_gravity="center"
-            android:text="@string/go_to_activity"
-            android:onClick="toAct"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonFrag"
-            android:text="@string/go_to_fragment"
-            android:layout_gravity="center"
-            android:onClick="toFrg"/>
+            android:text="Hello World!"
+            android:textColor="@color/colorPrimary" />
     </LinearLayout>
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <Button
+            android:id="@+id/addUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add User" />
+
+        <Button
+            android:id="@+id/listUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List User" />
+
+        <Button
+            android:id="@+id/changeActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Activity" />
+
+        <Button
+            android:id="@+id/changeFragmentActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Fragment" />
+
+        <EditText
+            android:id="@+id/inputText"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

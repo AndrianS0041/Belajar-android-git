@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Belajar-android-git-master.iml" filepath="$PROJECT_DIR$/Belajar-android-git-master.iml" />
-      <module fileurl="file://C:\Users\ASUS\Downloads\Andrian Nitip\Belajar-android-git-master(2)\Belajar-android-git-master\Splasscreen.iml" filepath="C:\Users\ASUS\Downloads\Andrian Nitip\Belajar-android-git-master(2)\Belajar-android-git-master\Splasscreen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Belajar-android-git.iml" filepath="$PROJECT_DIR$/Belajar-android-git.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\ASUS\Downloads\Andrian Nitip\Belajar-android-git-master(2)\Belajar-android-git-master\app\app.iml" filepath="C:\Users\ASUS\Downloads\Andrian Nitip\Belajar-android-git-master(2)\Belajar-android-git-master\app\app.iml" />
     </modules>
   </component>
 </project>
